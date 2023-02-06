@@ -31,8 +31,7 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   void initState() {
     try {
-      socket =
-          io("https://blooming-coast-89347.herokuapp.com/", <String, dynamic>{
+      socket = io("http://192.168.50.94:5000/", <String, dynamic>{
         "transports": ["websocket"],
         "autoConnect": false,
       });

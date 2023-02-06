@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:socket_io_chat_client/common/styles.dart';
 import 'chat_screen.dart';
 
 void main() {
@@ -66,91 +65,6 @@ class _RegScreenState extends State<RegScreen> {
         backgroundColor: Colors.amber,
         centerTitle: false,
         automaticallyImplyLeading: false,
-        // leading: IconButton(
-        //   onPressed: () => null,
-        //   icon: Icon(
-        //     Icons.arrow_circle_up_sharp,
-        //     color: Colors.white,
-        //     size: 22.5,
-        //   ),
-        // ),
-        //
-        //
-        // title: StreamBuilder(
-        //   stream: socketService.getUserInfo,
-        //   builder: (context, AsyncSnapshot snapshot) {
-        //     if (!snapshot.hasData) {
-        //       return Container();
-        //     }
-
-        //     return Row(
-        //       children: [
-        //         Container(
-        //           height: 40.0,
-        //           width: 40.0,
-        //           decoration: BoxDecoration(
-        //             shape: BoxShape.circle,
-        //             image: DecorationImage(
-        //               image: NetworkImage(snapshot.data['image']),
-        //               fit: BoxFit.cover,
-        //             ),
-        //           ),
-        //         ),
-        //         SizedBox(width: 12.0),
-        //         Column(
-        //           crossAxisAlignment: CrossAxisAlignment.start,
-        //           children: [
-        //             Text(
-        //               snapshot.data['name'],
-        //               style: TextStyle(
-        //                 color: colorTitle,
-        //                 fontSize: 14.5,
-        //                 fontWeight: FontWeight.w600,
-        //               ),
-        //             ),
-        //             SizedBox(height: 2.0),
-        //             Text(
-        //               'Active Now',
-        //               style: TextStyle(
-        //                 color: Colors.green.shade400,
-        //                 fontSize: 12.0,
-        //                 fontWeight: FontWeight.w400,
-        //               ),
-        //             ),
-        //           ],
-        //         ),
-        //       ],
-        //     );
-        //   },
-        // ),
-        // actions: [
-        //   IconButton(
-        //     onPressed: () => null,
-        //     icon: Icon(
-        //       Feather.phone,
-        //       size: 22.5,
-        //       color: colorPrimary,
-        //     ),
-        //   ),
-        //   SizedBox(width: 8.0),
-        //   IconButton(
-        //     onPressed: () => null,
-        //     icon: Icon(
-        //       Feather.video,
-        //       size: 22.5,
-        //       color: colorPrimary,
-        //     ),
-        //   ),
-        //   SizedBox(width: 8.0),
-        //   IconButton(
-        //     onPressed: () => openDrawer(),
-        //     icon: Icon(
-        //       Feather.sidebar,
-        //       size: 22.5,
-        //       color: colorPrimary,
-        //     ),
-        //   ),
-        // ],
       ),
       body: SafeArea(
         child: Container(
@@ -173,9 +87,9 @@ class _RegScreenState extends State<RegScreen> {
                       style: const TextStyle(fontSize: 18),
                       keyboardType: TextInputType.text,
                       textInputAction: TextInputAction.go,
-                      maxLength: 20,
+                      // maxLength: 20,
                       decoration: const InputDecoration(
-                        labelText: 'Name',
+                        labelText: 'UiD',
                         hintText: 'Enter your username',
                         hintStyle: TextStyle(fontSize: 15),
                         labelStyle:
