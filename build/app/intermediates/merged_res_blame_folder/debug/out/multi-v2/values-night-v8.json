@@ -4,7 +4,7 @@
             "outputFile": "com.example.live_written_chat.app-mergeDebugResources-9:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/hridoy/Desktop/chat/Test 5/live_written_chat/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/hridoy/Desktop/chat/Test 5/live_written_chat/chat/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

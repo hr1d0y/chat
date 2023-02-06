@@ -50,10 +50,28 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "flutter_feather_icons",
+      "rootUri": "file:///Users/hridoy/.pub-cache/hosted/pub.dartlang.org/flutter_feather_icons-2.0.0+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_screenutil",
+      "rootUri": "file:///Users/hridoy/.pub-cache/hosted/pub.dartlang.org/flutter_screenutil-5.6.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///Users/hridoy/flutter/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "get",
+      "rootUri": "file:///Users/hridoy/.pub-cache/hosted/pub.dartlang.org/get-4.6.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
     },
     {
       "name": "logging",
@@ -152,7 +170,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2023-02-06T08:07:29.079150Z",
+  "generated": "2023-02-06T08:24:50.162288Z",
   "generator": "pub",
   "generatorVersion": "2.19.0-146.2.beta"
 }

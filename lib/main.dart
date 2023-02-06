@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:socket_io_chat_client/common/styles.dart';
 import 'chat_screen.dart';
 
 void main() {
@@ -60,6 +61,97 @@ class _RegScreenState extends State<RegScreen> {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
+      appBar: AppBar(
+        elevation: 1.0,
+        backgroundColor: Colors.amber,
+        centerTitle: false,
+        automaticallyImplyLeading: false,
+        // leading: IconButton(
+        //   onPressed: () => null,
+        //   icon: Icon(
+        //     Icons.arrow_circle_up_sharp,
+        //     color: Colors.white,
+        //     size: 22.5,
+        //   ),
+        // ),
+        //
+        //
+        // title: StreamBuilder(
+        //   stream: socketService.getUserInfo,
+        //   builder: (context, AsyncSnapshot snapshot) {
+        //     if (!snapshot.hasData) {
+        //       return Container();
+        //     }
+
+        //     return Row(
+        //       children: [
+        //         Container(
+        //           height: 40.0,
+        //           width: 40.0,
+        //           decoration: BoxDecoration(
+        //             shape: BoxShape.circle,
+        //             image: DecorationImage(
+        //               image: NetworkImage(snapshot.data['image']),
+        //               fit: BoxFit.cover,
+        //             ),
+        //           ),
+        //         ),
+        //         SizedBox(width: 12.0),
+        //         Column(
+        //           crossAxisAlignment: CrossAxisAlignment.start,
+        //           children: [
+        //             Text(
+        //               snapshot.data['name'],
+        //               style: TextStyle(
+        //                 color: colorTitle,
+        //                 fontSize: 14.5,
+        //                 fontWeight: FontWeight.w600,
+        //               ),
+        //             ),
+        //             SizedBox(height: 2.0),
+        //             Text(
+        //               'Active Now',
+        //               style: TextStyle(
+        //                 color: Colors.green.shade400,
+        //                 fontSize: 12.0,
+        //                 fontWeight: FontWeight.w400,
+        //               ),
+        //             ),
+        //           ],
+        //         ),
+        //       ],
+        //     );
+        //   },
+        // ),
+        // actions: [
+        //   IconButton(
+        //     onPressed: () => null,
+        //     icon: Icon(
+        //       Feather.phone,
+        //       size: 22.5,
+        //       color: colorPrimary,
+        //     ),
+        //   ),
+        //   SizedBox(width: 8.0),
+        //   IconButton(
+        //     onPressed: () => null,
+        //     icon: Icon(
+        //       Feather.video,
+        //       size: 22.5,
+        //       color: colorPrimary,
+        //     ),
+        //   ),
+        //   SizedBox(width: 8.0),
+        //   IconButton(
+        //     onPressed: () => openDrawer(),
+        //     icon: Icon(
+        //       Feather.sidebar,
+        //       size: 22.5,
+        //       color: colorPrimary,
+        //     ),
+        //   ),
+        // ],
+      ),
       body: SafeArea(
         child: Container(
           color: const Color(0xFFEAEFF2),
@@ -103,8 +195,8 @@ class _RegScreenState extends State<RegScreen> {
                   width: size.width * 0.80,
                   height: 50,
                   child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF271160)),
+                    style:
+                        ElevatedButton.styleFrom(backgroundColor: Colors.amber),
                     onPressed: startChat,
                     child: _isLoading
                         ? Transform.scale(
@@ -116,9 +208,81 @@ class _RegScreenState extends State<RegScreen> {
                           )
                         : const Text('Start Chat',
                             style:
-                                TextStyle(fontSize: 17, color: Colors.white)),
+                                TextStyle(fontSize: 17, color: Colors.black)),
                   ),
                 ),
+                // Container(
+                //   height: 75.0,
+                //   child: Row(
+                //     children: [
+                //       Expanded(
+                //         child: Container(
+                //           margin: EdgeInsets.symmetric(
+                //             horizontal: 16.0,
+                //             vertical: 12.0,
+                //           ),
+                //           decoration: BoxDecoration(
+                //             borderRadius: BorderRadius.circular(
+                //               30.0,
+                //             ),
+                //             color: mC,
+                //             boxShadow: [
+                //               BoxShadow(
+                //                 color: mCD,
+                //                 offset: Offset(2, 2),
+                //                 blurRadius: 2,
+                //               ),
+                //               BoxShadow(
+                //                 color: mCL,
+                //                 offset: Offset(-2, -2),
+                //                 blurRadius: 2,
+                //               ),
+                //             ],
+                //           ),
+                //           alignment: Alignment.center,
+                //           child: TextFormField(
+                //             autofocus: true,
+                //             // focusNode: _focusNode,
+                //             // controller: _msgController,
+                //             // onFieldSubmitted: (val) => submitMsg(val),
+                //             cursorColor: fCL,
+                //             cursorRadius: Radius.circular(30.0),
+                //             keyboardType: TextInputType.text,
+                //             style: TextStyle(
+                //               color: fCL,
+                //               fontSize: 15.0,
+                //               fontWeight: FontWeight.w400,
+                //             ),
+                //             onTap: startChat,
+                //             textAlign: TextAlign.start,
+                //             decoration: InputDecoration(
+                //               contentPadding: EdgeInsets.only(
+                //                 bottom: .0,
+                //                 left: 24.0,
+                //               ),
+                //               border: InputBorder.none,
+                //               hintText: "User ID",
+                //               hintStyle: TextStyle(
+                //                 color: fCL,
+                //                 fontSize: 15.0,
+                //                 fontWeight: FontWeight.w400,
+                //               ),
+                //             ),
+                //           ),
+                //         ),
+                //       ),
+                //       // IconButton(
+                //       //   onPressed: () => submitMsg(_msg),
+                //       //   icon: Icon(
+                //       //     Feather.send,
+                //       //     color: _msg.length == 0 ? fCD : colorPrimary,
+                //       //     size: 30.0,
+                //       //   ),
+                //       // ),
+                //       SizedBox(width: 20.0),
+                //     ],
+                //   ),
+                // ),
               ],
             ),
           ),
