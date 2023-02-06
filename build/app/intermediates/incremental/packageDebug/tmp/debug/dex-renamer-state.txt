@@ -1,0 +1,4 @@
+#Mon Feb 06 13:58:32 BDT 2023
+base.0=/Users/hridoy/Desktop/chat/Test 5/live_written_chat/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
