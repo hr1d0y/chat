@@ -31,7 +31,7 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   void initState() {
     try {
-      socket = io("http://192.168.50.94:5000/", <String, dynamic>{
+      socket = io("http://34.200.254.109:5000", <String, dynamic>{
         "transports": ["websocket"],
         "autoConnect": false,
       });
@@ -65,7 +65,7 @@ class _ChatScreenState extends State<ChatScreen> {
       appBar: AppBar(
           centerTitle: true,
           title: const Text('Chat Screen'),
-          backgroundColor: const Color(0xFF271160)),
+          backgroundColor: Colors.amber),
       body: SafeArea(
         child: Container(
           color: const Color(0xFFEAEFF2),
@@ -134,7 +134,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       height: 43,
                       width: 42,
                       child: FloatingActionButton(
-                        backgroundColor: const Color(0xFF271160),
+                        backgroundColor: Colors.amber,
                         onPressed: () async {
                           if (_messageController.text.trim().isNotEmpty) {
                             String message = _messageController.text.trim();
